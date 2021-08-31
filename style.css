@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --darkbg:#282828;
+    --darkContent:#404040;
+}
+
+.header{
+    width: 100%;
+    min-height: 100px;
+    top: 0;
+    left: 0;
+    /* background-color:transparent ; */
+    background-color:#F9F6EE ;
+    position:fixed;
+    padding: 20px;
+    z-index: 3;
+    box-shadow: 0 10px 20px rgb(54, 54, 54);
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img{
+    width: 50px;
+    margin-right: 8px;
+}
+
+.top h4{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 40px;
+    color: #1DA1F2;
+    font-family: 'Fredoka',sans-serif;
+
+    font-weight: 900;
+
+}
+
+
+
+
+
+.header .go{
+    border: 2px solid #1DA1F2;
+    color: #404040;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.header #myAnchor .goBtn{
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: #1DA1F2;
+    border: white;
+    outline: none;
+}
+
+/* ----------------------- Section 1 --------------------- */
+
+.land{
+    width: 100%;
+   min-height: 100vh;
+   
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    /* background-color: darkblue;     */
+    /* padding-top: 100px; */
+    background-attachment: fixed; 
+    margin-top: 100px;   
+    position: relative;
+    
+}
+
+.content{       
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.content img{
+    width: 220px;
+    /* margin-bottom: 30px;  */
+    margin: 20px; 
+    padding: 10px;
+    border: 5px solid #fff;
+    
+}
+
+.content p{
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    
+    
+    
+    /* z-index: 1; */
+}
+
+
+
+
+.content p::before{
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: orange;
+    font-size: 3em;
+}
+
+.content p::after{
+    content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: orange;
+  font-size: 3em;
+}
+
+
+.main {
+    width: 100%;
+    /* background:linear-gradient(180deg,var(--darkbg),#818181) ; */
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    padding-top: 70px;
+        
+}
+
+.sub{
+    width:80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.sub textarea{
+    width: 100%;
+    min-height: 150px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;    
+    
+}
+
+.sub .cpyBtn{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: crimson;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------  media query  ------------------------------- */
+
+
+@media(max-width:600px){
+
+    /* ----------------- header section ---------------- */
+
+    .header{
+        padding: 10px;
+    }
+    
+    .top img{
+        width: 50px;
+        margin-right: 8px;
+        margin-left: 15px;
+    }
+
+    .top h4{
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-align:left;
+    }
+
+    .header h1{
+        text-align: center;
+        font-size: 20px;
+        color: #1DA1F2;
+        font-family: 'Fredoka',sans-serif;
+        letter-spacing: 2px;    
+        font-weight: 900;
+    
+    }
+
+    .header .mobView{
+        width: 70%;
+        margin: 5px auto ;
+    }
+
+    
+
+
+    /* --------------------------------------------------------------------------------------------- */
+    /* ----------------------------------------- Landing Section ------------------------------ */
+
+
+    .content{
+        width: 90%;
+        margin: auto;
+    }
+
+    .content p{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    /* .content p::after{
+        display: none;
+    } */
+   
+
+
+}
+
+
+
+
+
