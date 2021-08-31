@@ -229,6 +229,11 @@ html{
         font-weight: 900;
     
     }
+    
+    
+    .header .go{
+        width:130px;
+    }
 
     .header .mobView{
         width: 70%;
