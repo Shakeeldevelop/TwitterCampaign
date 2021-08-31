@@ -89,7 +89,7 @@ html{
     background-image: linear-gradient(to right, #2c3e50, #4ca1af);
     /* background-color: darkblue;     */
     /* padding-top: 100px; */
-    background-attachment: fixed; 
+/*     background-attachment: fixed;  */
     margin-top: 100px;   
     position: relative;
     
