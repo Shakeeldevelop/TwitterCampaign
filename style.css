@@ -160,6 +160,23 @@ html{
         
 }
 
+.main .tweetContent{
+    width: 100%;
+    padding: 90px 0 50px 0;
+       
+}
+
+.tweetContent .titleText{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.tweetContent .titleText span{
+    color: #1DA1F2;
+}
+
 .sub{
     width:80%;
     margin: auto;
