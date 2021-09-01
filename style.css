@@ -80,6 +80,16 @@ html{
     outline: none;
 }
 
+.header .mobView{   
+   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+}
+
+
+
 /* ----------------------- Section 1 --------------------- */
 
 .land{
@@ -252,8 +262,8 @@ html{
         width:130px;
     }
 
-    .header .mobView{
-        width: 70%;
+     .header .mobView{
+        width: 100%;
         margin: 5px auto ;
     }
 
